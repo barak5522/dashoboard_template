@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+  --components-background-rgb: 52, 52, 52;
+}
+
+[theme-mode="light"] {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+  --components-background-rgb: 214, 219, 220;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+.navbar, .graph {
+  background: rgb(var(--components-background-rgb));
+}
+
+.graph {
+  border-radius: 0.25rem;
+}
